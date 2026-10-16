@@ -10,4 +10,3 @@ A Macedonian Phalanx was basically a giant block of well - coordinated soldiers 
 Phillip II was a hostage in Thebes while he was young between 367 and 360 BC. So he saw some battle tactics of the general Epaminondas who was restructuring his Infantry and learned from those witnesses. 
 
 Phillip used the Phalanx to hold off enemies while heavy infantry and cavalry attacked the enemies. This was the strategy that Macedonia used to conquer everything around it. 
-That's all ive time for, sorry. 
