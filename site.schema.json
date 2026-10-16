@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research site configuration",
+  "type": "object",
+  "required": ["title", "sections"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "title": { "type": "string", "minLength": 1 },
+    "subtitle": { "type": "string" },
+    "language": { "type": "string", "default": "en" },
+    "sections": { "type": "array", "items": { "$ref": "#/$defs/section" } }
+  },
+  "$defs": {
+    "section": {
+      "type": "object",
+      "required": ["id", "title"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$", "description": "Unique section anchor and generated HTML ID." },
+        "title": { "type": "string", "minLength": 1 },
+        "file": { "type": "string", "pattern": "\\.md$", "description": "Markdown file path relative to the repository root. Omit for a grouping header." },
+        "nav": { "type": "boolean", "description": "Show a top navigation link. Defaults to true for entries with a file, false for groups." },
+        "target": { "type": "string", "description": "Optional ID of a div inside main in src/template.html. Otherwise render inside the parent section." },
+        "children": { "type": "array", "items": { "$ref": "#/$defs/section" }, "description": "Nested sections; each level adds one heading level. Starts at h2, maximum h6." }
+      }
+    }
+  }
+}
