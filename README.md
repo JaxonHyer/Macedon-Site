@@ -21,3 +21,8 @@ That's all ive time for, sorry. 
 
 Sincerely,
 Jaxon Hyer
+
+
+## Website framework
+
+See [the framework guide](docs/framework.md) for Markdown editing, hierarchy configuration, local preview, and GitHub Pages deployment instructions.

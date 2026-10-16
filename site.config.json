@@ -1,0 +1,26 @@
+{
+  "$schema": "./site.schema.json",
+  "title": "Ancient Macedonia",
+  "subtitle": "Research notes",
+  "language": "en",
+  "sections": [
+    {
+      "id": "research-batch-4",
+      "title": "Research batch 4",
+      "target": "research-content",
+      "nav": false,
+      "children": [
+        {
+          "id": "timeline-update",
+          "title": "Timeline update",
+          "file": "content/timeline-update.md"
+        },
+        {
+          "id": "army-reforms",
+          "title": "Army Reforms",
+          "file": "content/army-reforms.md"
+        }
+      ]
+    }
+  ]
+}
